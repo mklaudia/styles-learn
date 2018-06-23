@@ -13,6 +13,15 @@ const Img = styled.div`
   background-image: url(${props => props.imageSrc});
 `;
 
+/* material ui does not use styled-components, it uses css-modules
+const CustomButton = styled.Button`
+  background: ${props => {
+    switch(props.co)
+  }
+
+  }
+`;*/
+
 function App() {
   let isHighlighted = true;
 
