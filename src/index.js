@@ -1,20 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import styled from "styled-components";
+import { AppContainer, Title } from "./style.js";
 import classNames from "classnames";
 
 import "./styles.css";
-
-const AppContainer = styled.div`
-  color: blue;
-`;
 
 function App() {
   let isHighlighted = true;
 
   return (
     <AppContainer>
-      <h1>Hello CodeSandbox</h1>
+      <Title>Hello CodeSandbox</Title>
       <h2 className={classNames("a", "b", { c: isHighlighted })}>
         Start editing to see some magic happen!
       </h2>
